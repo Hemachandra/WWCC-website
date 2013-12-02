@@ -1,0 +1,179 @@
+@import 'includes/brand.less';
+@import 'includes/typography.less';
+@import 'includes/mixins.less';
+
+* {
+  .box-sizing;
+}
+
+body {
+  background-color: @dark;
+  font-family: @bodyfont;
+  font-size: 1em;
+  color: red;
+}
+
+
+
+.container {
+  .widthfloat(100%);
+  
+}
+
+header.container {
+  #logo {
+    .widthfloat(60%);
+    padding:20px 20px;
+
+  }
+ 
+
+  #rightNav {
+    .widthfloat(40%);
+
+
+    ul li {
+      display:inline-block;
+    }
+  }
+}
+
+div.container {
+  .widthfloat(100%);
+  #menubut {
+    text-align:center;
+    display:none;
+  }
+
+
+}
+
+nav.container {
+  background-color:red;
+  color:black;
+  text-transform: uppercase;
+
+  ul ul {
+    display:none;
+
+
+  }
+  ul li:hover>ul {
+    display:block;
+  }
+  ul li {
+    display :inline-block;
+    padding:0 3%;
+    margin:0 auto;
+    ul li {
+      display:block;
+    }
+  }
+
+
+}
+
+
+section.container {
+  #slideshow {
+    .widthfloat(60%);
+    color:@pink;
+   
+  
+  }
+
+  #newsevent {
+    .widthfloat(40%);
+   
+    .item {
+      width:100%;
+     
+      overflow:hidden;
+      .date {
+        width:20%;
+       margin-top:30px;
+        float:left;
+        
+        h4 {
+
+          width:70px;
+          height:70px;
+          margin:0 auto;
+          padding:10px;
+          background-color: black;
+        }
+      }
+      p {
+        width:75%;
+        float:right;
+        position:relative;
+      
+        overflow:hidden;
+       
+      }
+
+    }
+
+
+
+    
+
+  }
+
+
+}
+
+section.container {
+  #about {
+    .widthfloat(60%);
+  }
+  #bigbutton {
+    .widthfloat(40%);
+    ul li {
+      display:block;
+      padding:20px 0;
+      .but {
+        width:200px;
+        height:80px;
+        background-color:green; 
+      }
+
+    }
+
+
+  }
+
+}
+
+footer.container {
+  .widthfloat(100%);
+  .footitem {
+    .widthfloat(24%)
+
+  }
+;
+
+}
+
+
+footer.container {
+  background-color:#eee; 
+    #videos,#contact,#social,#united {
+      /*background-color: #999;*/
+      margin:0 auto;
+      padding:2 0%;
+      
+
+    }
+
+    #social {
+      ul li {
+        display:inline-block;
+      }
+    }
+    
+     
+
+}
+
+/
