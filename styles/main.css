@@ -166,6 +166,12 @@ footer.container .footitem {
   float: left;
   margin: 0 auto;
 }
+footer.container .footitem video {
+  display: inline-block;
+  width: 90%;
+  float: left;
+  margin: 0 auto;
+}
 footer.container {
   background-color: #eee;
 }
@@ -180,4 +186,35 @@ footer.container #united {
 }
 footer.container #social ul li {
   display: inline-block;
+}
+/*  Stories page   */
+section.container {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+}
+section.container article {
+  display: inline-block;
+  width: 60%;
+  float: left;
+  margin: 0 auto;
+}
+section.container article #imgx img {
+  margin: 50px 0;
+}
+section.container aside {
+  display: inline-block;
+  width: 40%;
+  float: left;
+  margin: 0 auto;
+}
+section.container aside #storyImg {
+  margin: 110px 0;
+}
+section.container aside #storyImg ul li {
+  display: inline-block;
+}
+section.container aside #storyImg ul li img {
+  margin: 10px;
 }

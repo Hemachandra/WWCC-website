@@ -54,7 +54,7 @@
 
 	<nav class="container">
 		<ul>
-			<li><a href="#">Home</a></li>
+			<li><a href=index.html>Home</a></li>
 			<li><a href="#">we can Help</a></li>
 			<li><a>Programs & Srvices</a>
 				<ul>
@@ -76,7 +76,7 @@
 				<ul>
 					<li><a href="#">Our Supporters</a></li>
 					<li><a href="#">Why give</a></li>
-					<li><a href="#">Our Stories</a></li>
+					<li><a href=stories.html>Our Stories</a></li>
 				</ul>
 			</li>
 			<li><a>About us</a>
@@ -87,24 +87,38 @@
 					<li><a href="#">Patrons Council</a></li>
 					<li><a href="#">Funders</a></li>
 					<li><a href="#">Annual Report</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href=contact.html>Contact Us</a></li>
 				</ul>
 
 			</li>
 
 		</ul>
 	</nav>
-	<section class="container">
-		
-		
-
-	</section>
-
-	
-
+	 <section class="container" id="form">
+      <div class="container">
+        <form parsley-validate>
+          <label>
+            <div class="labelappend">Name</div>
+            <input type="text" required>
+          </label>
+          <label>
+            <div class="labelappend">Email</div>
+            <input type="text" required>
+          </label>
+          <label>
+            <div class="labelappend">Phone</div>
+            <input type="text" required>
+          </label>
+          <input type="submit">
+        </form>
+      </div>
+    </section>
 	<footer class="container">
 		<div id="videos" class="footitem">
-			<img src="images/icon/facebook.png" width=150px height=150px/>		
+			<video width="320" height="240" controls>
+				  <source src="movie.mp4" type="video/mp4">
+				  <source src="movie.ogg" type="video/ogg">	  
+			</video>			
 		</div>
 		<div id="contact" class="footitem">
 			<div id="conInfo">	
