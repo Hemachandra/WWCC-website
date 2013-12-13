@@ -1,13 +1,13 @@
 a:link {
-  color: #000000;
+  color: #669324;
   text-decoration: none;
 }
 a:hover {
-  color: #000000;
+  color: #ade166;
   text-decoration: none;
 }
 a:visited {
-  color: #000000;
+  color: #669324;
   text-decoration: none;
 }
 p {
@@ -23,6 +23,7 @@ h4 {
   font-weight: 700;
   line-height: 1em;
   text-transform: uppercase;
+  color: #770034;
 }
 h1 {
   font-size: 2.3em;
@@ -45,13 +46,24 @@ body {
   background-color: #cccccc;
   font-family: 'Alegreya', Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
   font-size: 1em;
-  color: red;
+  color: #000;
+  background-color: #fff;
+}
+.wraper {
+  margin: 0 auto;
+  max-width: 1170px;
+  background-color: "#eeeeee";
 }
 .container {
   display: inline-block;
   width: 100%;
   float: left;
   margin: 0 auto;
+}
+/*header section */
+header.container {
+  /* z-index:5;*/
+
 }
 header.container #logo {
   display: inline-block;
@@ -66,44 +78,134 @@ header.container #rightNav {
   float: left;
   margin: 0 auto;
 }
-header.container #rightNav ul li {
+header.container #rightNav #threebut {
   display: inline-block;
+  width: 90%;
+  float: left;
+  margin: 0 auto;
 }
+header.container #rightNav #threebut ul li {
+  display: inline-block;
+  text-align: left;
+}
+header.container #rightNav #threebut ul li a {
+  font-size: 1.1em;
+}
+header.container #rightNav #search {
+  display: inline-block;
+  width: 90%;
+  float: left;
+  margin: 0 auto;
+}
+header.container #rightNav #search input {
+  float: left;
+  width: 200px;
+  height: 30px;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+header.container #rightNav #search img {
+  float: left;
+  margin-top: 5px;
+}
+/*menu Butt */
 div.container {
   display: inline-block;
   width: 100%;
   float: left;
   margin: 0 auto;
 }
-div.container #menubut {
+div.container div#menubut {
   text-align: center;
   display: none;
 }
-nav.container {
-  background-color: red;
-  color: black;
-  text-transform: uppercase;
+/**** End-nav *******/
+section.container {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+  display: block;
+  z-index: 10000;
 }
-nav.container ul ul {
+section.container nav {
+  background: #999;
+  float: left;
+  width: 100%;
+}
+section.container nav ul {
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  z-index: 60;
+}
+section.container nav ul li {
+  float: left;
+  display: inline;
+  padding-right: 10px;
+  z-index: 70;
+  width: 18%;
+}
+section.container nav ul li:hover {
+  background: #E6E6E6;
+}
+section.container nav ul li a {
+  display: block;
+  padding: 15px 25px;
+  color: #444;
+  font-size: 1.2em;
+}
+section.container nav ul li ul {
+  position: absolute;
+  width: 18%;
+  background: #999;
+  z-index: 100;
+  padding-left: 0px;
+}
+section.container nav ul li ul li {
+  width: 100%;
+  z-index: 120;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+section.container nav ul li ul li a {
+  display: block;
+  padding: 10px 10px 0 0;
+  color: #444;
+  font-size: 0.8em;
+  text-align: left;
+  padding-left: 10px;
+}
+section.container nav ul li ul li:hover {
+  background: #F7F7F7;
+  width: 100%;
+  display: block;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+section.container nav ul li ul.fallback {
   display: none;
 }
-nav.container ul li:hover > ul {
+section.container nav ul li:hover ul.fallback {
   display: block;
 }
-nav.container ul li {
+/**** End-nav *******/
+section.container {
   display: inline-block;
-  padding: 0 3%;
+  width: 100%;
+  float: left;
   margin: 0 auto;
-}
-nav.container ul li ul li {
-  display: block;
+  z-index: 3;
+  background-color: #cccccc;
 }
 section.container #slideshow {
   display: inline-block;
-  width: 60%;
+  width: 56%;
   float: left;
   margin: 0 auto;
-  color: #ee3f6a;
+  margin-right: 4%;
+  height: auto;
 }
 section.container #newsevent {
   display: inline-block;
@@ -114,30 +216,77 @@ section.container #newsevent {
 section.container #newsevent .item {
   width: 100%;
   overflow: hidden;
+  padding-top: 20px;
+  border-bottom: 2px solid #f9f9f9;
 }
 section.container #newsevent .item .date {
   width: 20%;
   margin-top: 30px;
   float: left;
 }
-section.container #newsevent .item .date h4 {
-  width: 70px;
-  height: 70px;
-  margin: 0 auto;
-  padding: 10px;
-  background-color: black;
+section.container #newsevent .item .date .box {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 1px solid #770034;
+  text-align: center;
+  margin-top: -20px;
 }
-section.container #newsevent .item p {
+section.container #newsevent .item .date .box h4 {
+  margin: 5px 10px 0px 10px;
+  padding: 10px 0 10px 0;
+  border-bottom: 2px solid #999;
+  font-size: 1em;
+}
+section.container #newsevent .item .date .box h5 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+section.container #newsevent .item .desc h4,
+section.container #newsevent .item .desc p {
   width: 75%;
   float: right;
   position: relative;
   overflow: hidden;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  margin: 10px 0px;
+}
+section.container #newsevent .item .desc p {
+  margin-left: 10px;
+  font-size: 1.1em;
+}
+section.container #newsevent .item .desc h4 {
+  font-size: 1em;
+}
+section.container {
+  z-index: 0;
+  display: inline-block;
+  width: 100%;
+  float: left;
+  background-color: #eee;
+  margin: 0 auto;
 }
 section.container #about {
   display: inline-block;
   width: 60%;
   float: left;
   margin: 0 auto;
+}
+section.container #about h2,
+section.container #about p {
+  margin-left: 30px;
+  font-family: sans-serif;
+}
+section.container #about h2 {
+  font-weight: 400;
+  text-transform: none;
+  margin-right: 60px;
+  border-bottom: 2px solid green;
+}
+section.container #about p {
+  font-size: 1.2em;
+  margin-right: 15px;
 }
 section.container #bigbutton {
   display: inline-block;
@@ -150,71 +299,742 @@ section.container #bigbutton ul li {
   padding: 20px 0;
 }
 section.container #bigbutton ul li .but {
-  width: 200px;
-  height: 80px;
-  background-color: green;
+  width: 300px;
+  height: 65px;
+  background-color: #498100;
+  font-size: 1.4em;
+  text-transform: uppercase;
 }
+section.container #bigbutton ul li .but:hover {
+  background-color: #18f40d;
+}
+/*footer section */
 footer.container {
   display: inline-block;
   width: 100%;
   float: left;
   margin: 0 auto;
+  z-index: 15;
+  background-color: #eee;
+  z-index: 2;
 }
 footer.container .footitem {
   display: inline-block;
-  width: 24%;
+  width: 25%;
   float: left;
   margin: 0 auto;
 }
-footer.container .footitem video {
+footer.container .footitem .eachit {
+  width: 95%;
+  border-top: 2px solid #9f9f9f;
+  margin: 0 auto;
+}
+footer.container .footitem .eachit #conInfo p {
+  margin: 0;
+  padding: 0;
+}
+footer.container .footitem .eachit #sitemap ul li {
+  display: block;
+}
+footer.container .footitem .eachit #social ul li {
   display: inline-block;
-  width: 90%;
+}
+footer.container .footitem .eachit #signup h5 {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 300;
+}
+footer.container .footitem .eachit #signup input {
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+footer.container .footitem .eachit img {
+  display: block;
+}
+footer.container .footitem .eachit #head2 {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+footer.container p {
+  width: 100%;
   float: left;
-  margin: 0 auto;
+  margin: 20px;
 }
-footer.container {
-  background-color: #eee;
+footer.container h4 {
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: center;
 }
-footer.container #videos,
-footer.container #contact,
-footer.container #social,
-footer.container #united {
-  /*background-color: #999;*/
-
-  margin: 0 auto;
-  padding: 2 0%;
+footer.container .eachit video {
+  width: 200px;
+  height: auto;
 }
-footer.container #social ul li {
-  display: inline-block;
+footer.container .eachit #social {
+  margin: 0;
 }
-/*  Stories page   */
+/************** we can help ******************************************/
 section.container {
   display: inline-block;
   width: 100%;
   float: left;
   margin: 0 auto;
 }
-section.container article {
+section.container #canhelp {
   display: inline-block;
   width: 60%;
   float: left;
   margin: 0 auto;
 }
-section.container article #imgx img {
-  margin: 50px 0;
+section.container #canhelp h3,
+section.container #canhelp p {
+  text-align: left;
+  margin: 30px;
 }
-section.container aside {
+section.container #canhelp h3 {
+  font-size: 1.5em;
+  font-family: sans-serif;
+}
+section.container #canhelp p {
+  font-size: 1.2em;
+}
+section.container #newsevent {
   display: inline-block;
   width: 40%;
   float: left;
   margin: 0 auto;
 }
-section.container aside #storyImg {
-  margin: 110px 0;
+section.container #newsletter {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+  /* margin:50px 0 50px 80px;*/
+
 }
-section.container aside #storyImg ul li {
+section.container #newsletter #labl {
+  background-color: green;
+  width: 100%;
+  position: relative;
+  margin: 50px auto;
+  height: 90px;
+}
+section.container #newsletter #labl p {
+  width: 55%;
+  float: left;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: 400;
+}
+section.container #newsletter #labl input {
+  width: 35%;
+  float: left;
+  margin-top: 25px;
+  height: 35px;
+}
+section.container #newsletter #labl button {
+  width: 40px;
+  height: 35px;
+  float: left;
+  margin-top: 25px;
+  margin-left: 10px;
+  color: #000;
+  background-color: green;
+}
+/********************************************************/
+/*  Stories page   */
+article.container {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+  background-color: #eee;
+}
+article.container section#amanda {
+  display: inline-block;
+  width: 60%;
+  float: left;
+  margin: 0 auto;
+  display: block;
+}
+article.container section#amanda div#amaImg h3 {
+  margin: 20px;
+}
+article.container section#amanda div#amaImg img {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+}
+article.container section#amanda div#descript h3,
+article.container section#amanda div#descript p {
+  margin: 20px;
+}
+article.container section {
+  display: none;
+}
+article.container aside {
+  display: inline-block;
+  width: 40%;
+  float: left;
+  margin: 0 auto;
+}
+article.container aside #storyImg ul li {
   display: inline-block;
 }
-section.container aside #storyImg ul li img {
-  margin: 10px;
+article.container aside #storyImg ul li img {
+  margin: 5px 5px;
+  opacity: 0.2;
 }
+article.container aside #storyImg ul li img:hover {
+  opacity: 1;
+}
+article.container aside #volun img {
+  margin-left: 40px;
+  margin-top: 30px;
+}
+/*stories-end */
+/********************************************************/
+/*contact page */
+.formgroup {
+  margin: 15px 20%;
+}
+.formgroup .formgroup label {
+  display: block;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+.formgroup input[type="text"],
+textarea {
+  display: block;
+  padding: 10px 5px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  background-image: none;
+  font-size: 1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.formgroup .btn {
+  display: inline-block;
+  margin: 0 35%;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  background-color: green;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+/*contact end */
+/* Media Query -mobile phone---------- Hemachandra --------------*/
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  header.container {
+    /* z-index:5;*/
+  
+  }
+  header.container #logo {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    padding: 20px 20px;
+    margin: 0 auto;
+  }
+  header.container #logo img {
+    margin-left: 40px;
+  }
+  header.container #rightNav {
+    display: none;
+  }
+  header.container #search {
+    dispaly: none;
+  }
+  /*  menu button */
+  div.container {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
+  div.container div#menubut {
+    display: block;
+    z-index: 2000;
+  }
+  /*  navbar */
+  section.container {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
+  section.container nav {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    display: none;
+  }
+  section.container nav ul {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    margin-left: -20px;
+  }
+  section.container nav ul li {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    display: block;
+  }
+  section.container nav ul li ul li {
+    display: none;
+    margin: 0;
+    padding-left: 60px;
+  }
+  section.container nav ul li ul li a {
+    font-size: 0.9em;
+  }
+  section.container nav ul li ul li a:hover ul ul {
+    display: none;
+  }
+  /*  slide show */
+  section.container {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
+  section.container #slideshow {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
+  section.container #newsevent {
+    display: none;
+  }
+  /*  about */
+  section.container {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
+  section.container div#about {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
+  section.container div#bigbutton ul li {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  section.container div#bigbutton ul li#bigbut1 {
+    display: block;
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  section.container div#bigbutton ul li.but {
+    width: 100%;
+  }
+  /* footer */
+  footer.container {
+    display: none;
+  }
+  /* home page end  */
+  /* we can help */
+  section.container {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
+  section.container #canhelp {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
+  section.container #canhelp h3,
+  section.container #canhelp p {
+    text-align: left;
+    margin: 20px;
+  }
+  section.container #canhelp h3 {
+    font-size: 1.5em;
+    font-family: sans-serif;
+  }
+  section.container #canhelp p {
+    font-size: 1.2em;
+  }
+  section.container #newsevent {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    display: none;
+  }
+  section.container #newsletter {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
+  section.container #newsletter #labl {
+    background-color: green;
+    width: 100%;
+    position: relative;
+    margin: 50px auto;
+    height: 90px;
+  }
+  section.container #newsletter #labl p {
+    width: 100%;
+    float: left;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 200;
+  }
+  section.container #newsletter #labl input {
+    width: 100%;
+    float: left;
+    margin: 25px 0;
+    height: 35px;
+  }
+  section.container #newsletter #labl button {
+    width: 100%;
+    height: 50px;
+    float: left;
+    margin: 0 0 30px 0;
+    color: #000;
+    background-color: green;
+  }
+  /* we can help end */
+  /* contact form */
+  .formgroup {
+    margin: 15px 20%;
+  }
+  .formgroup .formgroup label {
+    width: 100%;
+    display: block;
+    font-weight: 700;
+    font-size: 1.3em;
+    text-align: ;
+  }
+  .formgroup input[type="text"],
+  textarea {
+    display: block;
+    padding: 10px 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    background-image: none;
+    font-size: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+  .formgroup .btn {
+    display: inline-block;
+    margin: 0 35%;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    background-color: green;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  /* contact form */
+  /* stories page */
+  article.container {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    background-color: #eee;
+  }
+  article.container section#amanda {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    display: block;
+  }
+  article.container section#amanda div#amaImg h3 {
+    margin: 10px;
+    width: 100%;
+  }
+  article.container section#amanda div#amaImg img {
+    width: 100%;
+  }
+  article.container section#amanda div#descript {
+    display: none;
+  }
+  article.container section {
+    display: none;
+  }
+  article.container aside {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
+  article.container aside div#storyImg {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
+  article.container aside div#storyImg h4 {
+    width: 100%;
+  }
+  article.container aside div#storyImg ul li {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+  }
+  article.container aside div#storyImg ul li a {
+    margin: 0;
+  }
+  article.container aside div#volun img {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
+  /* stories page  end*/
+}
+/*  end of media query mobile phone*/
+/* Media Query start here for tablet */
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  .wraper {
+    margin: 0 auto;
+    max-width: 1024px;
+    background-color: "#eeeeee";
+  }
+  div.container {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
+  div.container div#menubut {
+    text-align: center;
+    display: none;
+  }
+  section.container {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    display: block;
+    z-index: 10;
+  }
+  section.container nav {
+    background: #999;
+    float: left;
+    width: 100%;
+  }
+  section.container nav ul {
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    z-index: 60;
+  }
+  section.container nav ul li {
+    float: left;
+    display: inline;
+    padding-right: 10px;
+    z-index: 70;
+    width: 18%;
+  }
+  section.container nav ul li:hover {
+    background: #E6E6E6;
+  }
+  section.container nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: #444;
+    font-size: 1em;
+  }
+  section.container nav ul li ul {
+    position: absolute;
+    width: 18%;
+    background: #999;
+    z-index: 100;
+    padding-left: 0px;
+  }
+  section.container nav ul li ul li {
+    width: 100%;
+    z-index: 120;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+  section.container nav ul li ul li a {
+    display: block;
+    padding: 10px 10px 0 0;
+    color: #444;
+    font-size: 0.7em;
+    text-align: left;
+    padding-left: 10px;
+  }
+  section.container nav ul li ul li:hover {
+    background: #F7F7F7;
+    width: 100%;
+    display: block;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  section.container nav ul li ul.fallback {
+    display: none;
+  }
+  section.container nav ul li:hover ul.fallback {
+    display: block;
+  }
+  section.container {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    z-index: 3;
+    background-color: #cccccc;
+  }
+  section.container #slideshow {
+    display: inline-block;
+    width: 56%;
+    float: left;
+    margin: 0 auto;
+    margin-right: 4%;
+    height: auto;
+  }
+  section.container #newsevent {
+    display: inline-block;
+    width: 40%;
+    float: left;
+    margin: 0 auto;
+  }
+  section.container #newsevent .item {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+    border-bottom: 2px solid #f9f9f9;
+  }
+  section.container #newsevent .item .date {
+    width: 20%;
+    margin-top: 30px;
+    float: left;
+  }
+  section.container #newsevent .item .date .box {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border: 1px solid #770034;
+    text-align: center;
+    margin-top: -15px;
+  }
+  section.container #newsevent .item .date .box h4 {
+    margin: 5px 10px 0px 10px;
+    padding: 10px 0 10px 0;
+    border-bottom: 2px solid #999;
+    font-size: 0.8em;
+  }
+  section.container #newsevent .item .date .box h5 {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  section.container #newsevent .item .desc h4,
+  section.container #newsevent .item .desc p {
+    width: 75%;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    font-family: sans-serif;
+    /*font-size:1.1em;*/
+  
+    margin: 10px 0px;
+  }
+  section.container #newsevent .item .desc p {
+    margin-left: 10px;
+    font-size: 1em;
+  }
+  section.container #newsevent .item .desc h4 {
+    font-size: 1em;
+  }
+  /* home page done   */
+  article.container {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    background-color: #eee;
+  }
+  article.container section#amanda {
+    display: inline-block;
+    width: 60%;
+    float: left;
+    margin: 0 auto;
+    display: block;
+  }
+  article.container section#amanda div#amaImg h3 {
+    margin: 20px;
+  }
+  article.container section#amanda div#amaImg img {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
+  article.container section#amanda div#descript h3,
+  article.container section#amanda div#descript p {
+    margin: 20px;
+  }
+  article.container section {
+    display: none;
+  }
+  article.container aside {
+    display: inline-block;
+    width: 40%;
+    float: left;
+    margin: 0 auto;
+  }
+  article.container aside #storyImg ul li {
+    display: inline-block;
+  }
+  article.container aside #storyImg ul li img {
+    margin: 5px 5px;
+    opacity: 0.2;
+  }
+  article.container aside #storyImg ul li img:hover {
+    opacity: 1;
+  }
+  article.container aside #volun img {
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+}
+/* Media Query end here for 1024px */

@@ -162,7 +162,8 @@
 
 .bx-wrapper .bx-controls-auto .bx-stop:hover,
 .bx-wrapper .bx-controls-auto .bx-stop.active {
-	background-position: -86px -33px;
+	background-position: -76px -33px;
+	/*background-position: -86px -33px;*/
 }
 
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
@@ -186,6 +187,12 @@
 	background: #666\9;
 	background: rgba(80, 80, 80, 0.75);
 	width: 100%;
+
+}
+
+.bx-caption:hover {
+	margin-bottom:25px;
+
 }
 
 .bx-wrapper .bx-caption span {
